@@ -1,0 +1,40 @@
+.header {
+    height: 50px;
+    border-bottom: 2px solid #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 0.5rem;
+    width: 60px;
+    height: 60px;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-link {
+    margin-left: 3rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.header-login {
+    margin-right: 0.5rem;
+}
