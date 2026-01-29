@@ -54,10 +54,10 @@
 }
 
 .btn-skeleton {
-  border: 1px solid white;
+  border: 1px solid var(--primary-color);
 }
 
 .btn-skeleton:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-color: transparent;
 }
