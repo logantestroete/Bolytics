@@ -6,7 +6,9 @@
     margin-top: 3rem;
     width: 325px;
     background-color: var(--card-bg-color);
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
 }
 
 .ds-league-btn-container {
@@ -42,8 +44,12 @@
 }
 
 .ds-table-container {
-    position:relative;
-    top: 0;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: var(--card-bg-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .active-ds-table {
