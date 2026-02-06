@@ -1,18 +1,27 @@
 import './App.css'
 import { useQuery } from "@tanstack/react-query"
 import Header from "./Components/Header"
+import DivisionalStandings from './Components/DivisionalStandings';
 import type { StandingsQueryResult } from './Tools/Types';
 
 function App() {
-  const { data } = useQuery({
+  const { data, isError, isLoading, error } = useQuery({
     queryKey: ['DivisionStandings'],
     queryFn: getDivisionStandings
   });
 
+  if (isError) {
+    return <div>{error.message}</div>
+  }
+
+  if (isLoading) {
+    return <div>Currently Loading</div>
+  }
+
   return (
     <>
       <Header />
-      <div>{JSON.stringify(data?.records[0].teamRecords[0].team.name)}</div>
+      <DivisionalStandings standings={data?.records ?? []}/>
     </>
   )
 }

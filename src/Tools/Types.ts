@@ -225,7 +225,7 @@ export type DivisionStandings = {
     teamRecords: TeamRecord[];
 };
 
-export type StandingsQueryResult = { records: DivisionStandings[]; };
+export type StandingsQueryResult = { records: DivisionStandings[]};
 
 // Schedule Types
 

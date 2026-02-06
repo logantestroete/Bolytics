@@ -1,0 +1,24 @@
+.ds-teamRecord-table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.ds-teamRecord-table td {
+    text-align: center;
+}
+
+.ds-teamRecord-row-teamName {
+    width: 30%;
+    text-align: start;
+}
+
+.ds-teamRecord-row:hover {
+    cursor: default;
+    background-color: #6e6d6d;
+}
+
+
+.ds-teamRecord-header {
+    font-weight: 700;
+}
