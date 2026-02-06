@@ -1,0 +1,59 @@
+.ds-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 325px;
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+}
+
+.ds-league-btn-container {
+    width: 100%;
+}
+
+.ds-btn {
+    width: 50%;
+    height: 2rem;
+    text-align: center;
+}
+
+.ds-btn:hover {
+    cursor: pointer;
+}
+
+.ds-al-btn {
+    border-top-left-radius: 15px;
+    background-color: #fc4949;
+}
+
+.ds-al-btn:hover {
+    background-color: #fc8d8d;
+}
+
+.ds-nl-btn {
+    border-top-right-radius: 15px;
+    background-color: #4777fc;
+}
+
+.ds-nl-btn:hover {
+    background-color: #81bcf7;
+}
+
+.ds-table-container {
+    position:relative;
+    top: 0;
+}
+
+.active-ds-table {
+    z-index: 10;
+}
+
+.inactive-ds-table {
+    z-index: 1;
+}
+
+.inactive-ds-btn {
+    background-color: transparent;
+}
