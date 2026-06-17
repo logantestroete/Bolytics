@@ -24,7 +24,7 @@ function SideNavBar({tabs}: SideNavBarProp) {
         <div className="bg-bg h-[100vh] px-[clamp(0.5rem,1vw,1.5rem)] flex flex-col items-center gap-y-4">
 
             <ImageButton Image={LeftArrow} onClick={() => setIsCollapsed(!isCollapsed)}
-                className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} `} />
+                className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} mt-4`} />
 
             <ul className="flex flex-col gap-y-3">
                 {tabs.map(tab => {
