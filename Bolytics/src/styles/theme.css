@@ -1,0 +1,10 @@
+
+
+@theme {
+    --color-bg-dark: #000000;
+    --color-bg: #1E1E1E;
+    --color-bg-light: #3f3f3f;
+
+    --color-text: #ffffff;
+    --color-text-muted: #cfcfcf;
+}
