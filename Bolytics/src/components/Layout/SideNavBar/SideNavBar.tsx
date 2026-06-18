@@ -21,12 +21,12 @@ function SideNavBar({tabs}: SideNavBarProp) {
 
 
     return (
-        <div className="bg-bg md:h-[100vh] px-[clamp(0.5rem,1vw,1.5rem)] flex flex-col items-center gap-y-4">
+        <div className="bg-bg h-[100vh] px-[clamp(0.5rem,1vw,1.5rem)] flex flex-col items-center gap-y-4">
 
             <ImageButton Image={LeftArrow} onClick={() => setIsCollapsed(!isCollapsed)}
-                className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} mt-4 hidden md:block`} />
+                className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} mt-4`} />
 
-            <ul className="flex md:flex-col gap-y-3">
+            <ul className="flex flex-col gap-y-3">
                 {tabs.map(tab => {
                     return <SideNavBarTab key={tab.title} title={tab.title} Icon={tab.Icon} 
                         isCollapsed={isCollapsed} onClick={() => console.log("Tab changed: ", tab)}/>

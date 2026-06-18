@@ -13,10 +13,10 @@ type DashboardPageLayoutProp = {
 
 function DashboardPageLayout({children, tabs}: DashboardPageLayoutProp) {
     return (
-        <div className="bg-bg-dark w-[100vw] h-[100vh] text-text overflow-x-hidden scrollbar-thin">
+        <div className="bg-bg-dark w-[100vw] h-[100vh] text-text overflow-x-hidden">
             <Header />
 
-            <div className="flex flex-col md:flex-row">
+            <div className="flex">
                 <SideNavBar tabs={tabs}/>
 
                 <div className="grow-1">
