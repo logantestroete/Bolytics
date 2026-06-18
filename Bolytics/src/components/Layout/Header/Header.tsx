@@ -7,7 +7,7 @@ import HeaderUserMenu from "./HeaderUserMenu";
 
 function Header() {
     return (
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-16 px-4 bg-bg">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-16 px-2 bg-bg">
             <SiteLogo className="justify-self-start size-[3rem]" />
 
             <HeaderLinks />
