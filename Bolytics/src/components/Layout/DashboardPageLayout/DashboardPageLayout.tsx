@@ -7,10 +7,7 @@ import TabContextProvider from '../../../context/tabNavigation';
 
 type DashboardPageLayoutProp = {
     children: React.ReactElement;
-    tabs: {
-        title: string;
-        Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-    }[];
+    tabs: string[];
 }
 
 function DashboardPageLayout({ children, tabs }: DashboardPageLayoutProp) {

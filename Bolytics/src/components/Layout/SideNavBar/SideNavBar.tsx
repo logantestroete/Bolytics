@@ -8,10 +8,7 @@ import ImageButton from "../../UI/ImageButton";
 
 // Prop Type
 type SideNavBarProp = {
-    tabs: {
-        title: string;
-        Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-    }[]
+    tabs: string[];
 }
 
 
@@ -27,8 +24,8 @@ function SideNavBar({tabs}: SideNavBarProp) {
                 className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} mt-4 hidden`} />
 
             <ul className="flex justify-between sticky top-0 overflow-x-auto scroll-auto no-scrollbar w-full">
-                {tabs.map((tab,index) => {
-                    return <SideNavBarTab key={tab.title} title={tab.title} index={index}/>
+                {tabs.map((title,index) => {
+                    return <SideNavBarTab key={title} title={title} index={index}/>
                 })}
             </ul>
         </div>
