@@ -8,12 +8,12 @@ function HeaderUserMenu() {
     return (
         <div className="justify-self-end">
             {isLoggedIn ? 
-            <div onClick={() => setIsLoggedIn(true)}>
-                Things
-            </div> :
-            <div onClick={() => setIsLoggedIn(false)}>
-                Not Logged In
-            </div>}
+            <button onClick={() => setIsLoggedIn(false)}>
+                Profile
+            </button> :
+            <button onClick={() => setIsLoggedIn(true)}>
+                Login
+            </button>}
         </div>
     )
 }

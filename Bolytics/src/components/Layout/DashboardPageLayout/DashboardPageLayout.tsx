@@ -3,6 +3,8 @@ import "../../../styles/index.css";
 import Header from "../Header/Header";
 import SideNavBar from "../SideNavBar/SideNavBar";
 
+import TabContextProvider from '../../../context/tabNavigation';
+
 type DashboardPageLayoutProp = {
     children: React.ReactElement;
     tabs: {
@@ -11,19 +13,21 @@ type DashboardPageLayoutProp = {
     }[];
 }
 
-function DashboardPageLayout({children, tabs}: DashboardPageLayoutProp) {
+function DashboardPageLayout({ children, tabs }: DashboardPageLayoutProp) {
     return (
-        <div className="bg-bg-dark w-[100vw] h-[100vh] text-text overflow-x-hidden">
-            <Header />
+        <TabContextProvider>
+            <div className="bg-bg-dark w-[100vw] h-[100vh] text-text overflow-x-hidden">
+                <Header />
 
-            <div className="flex">
-                <SideNavBar tabs={tabs}/>
+                <div className="flex flex-col">
+                    <SideNavBar tabs={tabs} />
 
-                <div className="grow-1">
-                    {children}
+                    <div className="grow-1">
+                        {children}
+                    </div>
                 </div>
             </div>
-        </div>
+        </TabContextProvider>
     )
 }
 

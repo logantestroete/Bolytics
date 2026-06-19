@@ -21,15 +21,14 @@ function SideNavBar({tabs}: SideNavBarProp) {
 
 
     return (
-        <div className="bg-bg h-[100vh] px-[clamp(0.5rem,1vw,1.5rem)] flex flex-col items-center gap-y-4">
+        <div className="bg-bg flex flex-col items-center gap-y-4">
 
             <ImageButton Image={LeftArrow} onClick={() => setIsCollapsed(!isCollapsed)}
-                className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} mt-4`} />
+                className={`transition-transform duration-[0.25s] ${isCollapsed ? 'rotate-180' : 'mr-[-90%]'} mt-4 hidden`} />
 
-            <ul className="flex flex-col gap-y-3">
-                {tabs.map(tab => {
-                    return <SideNavBarTab key={tab.title} title={tab.title} Icon={tab.Icon} 
-                        isCollapsed={isCollapsed} onClick={() => console.log("Tab changed: ", tab)}/>
+            <ul className="flex justify-between sticky top-0 overflow-x-auto scroll-auto no-scrollbar w-full">
+                {tabs.map((tab,index) => {
+                    return <SideNavBarTab key={tab.title} title={tab.title} index={index}/>
                 })}
             </ul>
         </div>
