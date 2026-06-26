@@ -1,4 +1,7 @@
+import DashboardHomeSubPage from "../components/Layout/DashboardHomeSubPage/DashboardHomeSubPage";
 import DashboardPageLayout from "../components/Layout/DashboardPageLayout/DashboardPageLayout";
+
+import TabContextProvider from '../context/tabNavigation';
 
 const tabs = [
     "Home",
@@ -10,11 +13,11 @@ const tabs = [
 
 function Dashboard() {
     return (
-        <DashboardPageLayout tabs={tabs}>
-            <div>
-
-            </div>
-        </DashboardPageLayout>
+        <TabContextProvider>
+            <DashboardPageLayout tabs={tabs}>
+                <DashboardHomeSubPage />
+            </DashboardPageLayout>
+        </TabContextProvider>
     )
 }
 
