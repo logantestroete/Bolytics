@@ -1,7 +1,9 @@
+import { useContext } from "react";
 import "../../../styles/index.css";
 
 import Header from "../Header/Header";
 import SideNavBar from "../SideNavBar/SideNavBar";
+import { ThemeContext } from "../../../context/themeContext";
 
 
 
@@ -11,10 +13,12 @@ type DashboardPageLayoutProp = {
 }
 
 function DashboardPageLayout({ children, tabs }: DashboardPageLayoutProp) {
-    return (
-        <div className="bg-bg-dark w-[100vw] h-[100vh] text-text overflow-x-hidden">
-            <Header />
+    const t = useContext(ThemeContext);
 
+    return (
+        <div className={`${t?.theme.bgDark} w-[100vw] h-[100vh] text-text overflow-x-hidden`}>
+            <Header />
+            
             <div className="flex flex-col">
                 <SideNavBar tabs={tabs} />
 

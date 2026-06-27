@@ -5,4 +5,26 @@
 
     --color-text: #ffffff;
     --color-text-muted: #cfcfcf;
+
+    /* Dark mode */
+    --color-dark-bg-dark: oklch(15% 0 0);
+    --color-dark-bg: oklch(30% 0 0);
+    --color-dark-bg-light: oklch(45% 0 0);
+
+    --color-dark-text: #;
+    --color-dark-text-muted: #;
+
+    --color-dark-border: oklch(80% 0 0);
+    
+    --color-dark-primary: #;
+    --color-dark-accent: #;
+
+    --color-dark-success: #;
+    --color-dark-error: #;
+    --color-dark-warning: #;
+    --color-dark-info: #;
+
+    --color-dark-stat-better: #;
+    --color-dark-stat-worse: #;
+    --color-dark-stat-equal: #;
 }
