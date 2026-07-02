@@ -6,7 +6,7 @@ type CardHeaderProps = {
 }
 
 function CardHeader({text, className}: CardHeaderProps) {
-    return <span className={`text-[clamp(1.25rem,1.5rem+1vw,2rem)] font-semibold text-text ${className}`}>{text}</span>
+    return <div className={`text-[clamp(1.25rem,1.5rem+1vw,2rem)] font-semibold text-text ${className}`}>{text}</div>
 }
 
 export default CardHeader;

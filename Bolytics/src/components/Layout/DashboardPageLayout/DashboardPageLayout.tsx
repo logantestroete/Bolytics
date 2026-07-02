@@ -22,7 +22,7 @@ function DashboardPageLayout({ children, tabs }: DashboardPageLayoutProp) {
             <div className="flex flex-col">
                 <SideNavBar tabs={tabs} />
 
-                <div className="grow-1">
+                <div className="grow-1 px-2">
                     {children}
                 </div>
             </div>

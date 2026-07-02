@@ -21,6 +21,12 @@ export interface Division {
     link: string;
 }
 
+export interface Sport {
+    id: number;
+    link: string;
+    abbreviation: string;
+}
+
 export interface Player {
     id: number;
     fullName: string;
