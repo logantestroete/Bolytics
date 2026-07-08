@@ -5,6 +5,10 @@ type ThemeColorObjectType = {
     bg: string;
     bgLight: string;
     bgPrimary: string;
+    bgInfo: string;
+    bgWarning: string;
+    bgError: string;
+    bgSuccess: string;
     text: string;
     textMuted: string;
     border: string;
@@ -36,6 +40,10 @@ const darkTheme: ThemeColorObjectType = {
     bg: 'bg-dark-bg',
     bgLight: 'bg-dark-bg-light',
     bgPrimary: "bg-dark-primary",
+    bgInfo: "bg-dark-info",
+    bgWarning: "bg-dark-warning",
+    bgError: "bg-dark-error",
+    bgSuccess: "bg-dark-success",
     text: 'text-dark-text',
     textMuted: 'text-dark-text-muted',
     border: 'border-dark-border',
@@ -61,6 +69,10 @@ const lightTheme: ThemeColorObjectType = {
     bg: 'bg-light-bg',
     bgLight: 'bg-light-bg-light',
     bgPrimary: 'bg-light-primary',
+    bgInfo: 'bg-light-info',
+    bgError: 'bg-light-error',
+    bgSuccess: 'bg-light-success',
+    bgWarning: 'bg-light-warning',
     text: 'text-light-text',
     textMuted: 'text-light-text-muted',
     border: 'border-light-border',

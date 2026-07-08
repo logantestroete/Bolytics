@@ -1,6 +1,7 @@
 import "../../../styles/index.css"
 import DashboardHomePlayerLeaders from "./DashboardHomePlayerLeaders";
 import DashboardHomeStandings from "./DashboardHomeStandings";
+import DashboardHomeTodaysGames from "./DashboardHomeToday'sGames";
 import FavoriteTeam from "./FavoriteTeam";
 
 
@@ -12,6 +13,7 @@ function DashboardHomeSubPage() {
                 <FavoriteTeam />
                 <DashboardHomeStandings />
             </div>
+            <DashboardHomeTodaysGames />
             <div>
                 <DashboardHomePlayerLeaders />
             </div>

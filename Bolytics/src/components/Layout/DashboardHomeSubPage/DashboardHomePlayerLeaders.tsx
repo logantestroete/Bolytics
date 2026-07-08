@@ -23,13 +23,13 @@ function DashboardHomePlayerLeaders() {
 
     return (
         <CardContainer className={`grid grid-cols-[1fr] gap-y-4 ${t?.theme.text}`}>
-            <div className='flex w-[100%]'>
+            <div className='flex flex-col gap-y-1 w-[100%]'>
                 <CardHeader text="Player Stat Leaders" className='justify-self-start mr-auto' />
                 <DropdownMenu values={statTypes} setValue={setSelectedStat} />
             </div>
             <div className='grid grid-cols-[1fr] gap-y-2'>
-                <div className={`flex flex justify-between items-center ${t?.theme.border} border-b gap-y-2 py-2`} >
-                    <div className={`flex gap-x-4 items-center ${t?.theme.primaryBorder} border-r-1 pr-8 grow-1 shrink-1`}>
+                <div className={`flex justify-between items-center ${t?.theme.border} border-b gap-y-2 py-2`} >
+                    <div className={`flex gap-x-4 items-center ${t?.theme.primaryBorder} border-r-1 grow-1 shrink-1`}>
                         <div className={`grid grid-cols-[1fr] place-items-center gap-y-2`}>
                             <div className={`flex justify-center items-center border-${t?.theme.primary} border-2 w-[5rem] h-[5rem] rounded-full p-1`}>
                                 <div className={`rounded-full w-[90%] h-[90%] ${t?.theme.bgLight}`}>

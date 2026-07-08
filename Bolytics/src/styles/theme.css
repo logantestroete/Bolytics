@@ -16,13 +16,13 @@
 
     --color-dark-border: oklch(80% 0 0);
     
-    --color-dark-primary: oklch(67.8% 0.217 283.3);
-    --color-dark-accent: #;
+    --color-dark-primary: oklch(63.5% 0.308 360.0);
+    --color-dark-accent: oklch(53.0% 0.308 360.0);
 
-    --color-dark-success: #;
-    --color-dark-error: #;
-    --color-dark-warning: #;
-    --color-dark-info: #;
+    --color-dark-success: oklch(93.5% 0.270 150.9);
+    --color-dark-error: oklch(63.9% 0.270 23.3);
+    --color-dark-warning: oklch(92.8% 0.225 108.6);
+    --color-dark-info: oklch(62.7% 0.308 255.6);
 
     --color-dark-stat-better: #;
     --color-dark-stat-worse: #;

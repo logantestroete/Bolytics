@@ -28,7 +28,7 @@ function DropdownMenu({ values, setValue }: Props) {
                 <DropdownArrow />
             </button>
 
-            <div className={`${isDropDownOpen?'absolute':'hidden'} z-10 top-11`}>
+            <div className={`${isDropDownOpen?'absolute':'hidden'} z-10 top-11 flex flex-col`}>
                 {values.map(value => {
                     if (value === curValue) return <div key={value} className='hidden'></div>
                     return <button key={value} onClick={() => setValues(value)}
