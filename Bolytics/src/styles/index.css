@@ -2,6 +2,8 @@
 @import "./theme.css";
 @import "./utilities.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
@@ -9,4 +11,5 @@ body {
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
 }

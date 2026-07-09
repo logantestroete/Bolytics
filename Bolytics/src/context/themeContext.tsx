@@ -11,6 +11,7 @@ type ThemeColorObjectType = {
     bgSuccess: string;
     text: string;
     textMuted: string;
+    textPrimary: string;
     border: string;
     primaryBorder: string;
     accentBorder: string;
@@ -46,6 +47,7 @@ const darkTheme: ThemeColorObjectType = {
     bgSuccess: "bg-dark-success",
     text: 'text-dark-text',
     textMuted: 'text-dark-text-muted',
+    textPrimary: 'text-dark-primary',
     border: 'border-dark-border',
     primaryBorder: "border-dark-primary",
     accentBorder: "border-dark-accent",
@@ -75,6 +77,7 @@ const lightTheme: ThemeColorObjectType = {
     bgWarning: 'bg-light-warning',
     text: 'text-light-text',
     textMuted: 'text-light-text-muted',
+    textPrimary: 'text-light-primary',
     border: 'border-light-border',
     primaryBorder: "border-light-primary",
     accentBorder: "border-ligh-accent",

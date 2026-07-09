@@ -14,7 +14,7 @@
     --color-dark-text: #;
     --color-dark-text-muted: #;
 
-    --color-dark-border: oklch(80% 0 0);
+    --color-dark-border: oklch(50% 0 0);
     
     --color-dark-primary: oklch(63.5% 0.308 360.0);
     --color-dark-accent: oklch(53.0% 0.308 360.0);
