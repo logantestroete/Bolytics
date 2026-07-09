@@ -1,25 +1,23 @@
+import DashboardHomeSubPage from "../components/Layout/DashboardHomeSubPage/DashboardHomeSubPage";
 import DashboardPageLayout from "../components/Layout/DashboardPageLayout/DashboardPageLayout";
 
-// Icon imports
-import PlayerIcon from '../assets/player.svg?react';
-import HomeIcon from '../assets/home.svg?react';
-import TeamIcon from '../assets/team.svg?react';
-import SeasonIcon from '../assets/season.svg?react';
+import TabContextProvider from '../context/tabNavigation';
 
 const tabs = [
-    { title: "Home", Icon: HomeIcon},
-    { title: "Player", Icon: PlayerIcon},
-    { title: "Team", Icon: TeamIcon},
-    { title: "Season", Icon: SeasonIcon}
+    "Home",
+    "Player",
+    "Team",
+    "Standings",
+    "Season"
 ];
 
 function Dashboard() {
     return (
-        <DashboardPageLayout tabs={tabs}>
-            <div>
-
-            </div>
-        </DashboardPageLayout>
+        <TabContextProvider>
+            <DashboardPageLayout tabs={tabs}>
+                <DashboardHomeSubPage />
+            </DashboardPageLayout>
+        </TabContextProvider>
     )
 }
 
