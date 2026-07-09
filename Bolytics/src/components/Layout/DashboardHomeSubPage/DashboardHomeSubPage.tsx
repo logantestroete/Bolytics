@@ -2,6 +2,7 @@ import "../../../styles/index.css"
 import DashboardHomePlayerLeaders from "./DashboardHomePlayerLeaders";
 import DashboardHomeStandings from "./DashboardHomeStandings";
 import DashboardHomeTodaysGames from "./DashboardHomeToday'sGames";
+import DashboardHomeTrendingTeams from "./DashboardHomeTrendingTeams/DashboardHomeTrendingTeams";
 import FavoriteTeam from "./FavoriteTeam";
 
 
@@ -14,8 +15,9 @@ function DashboardHomeSubPage() {
                 <DashboardHomeStandings />
             </div>
             <DashboardHomeTodaysGames />
-            <div>
+            <div className="grid grid-cols-[1fr] gap-2">
                 <DashboardHomePlayerLeaders />
+                <DashboardHomeTrendingTeams />
             </div>
         </div>
     )
