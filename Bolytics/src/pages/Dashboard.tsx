@@ -1,8 +1,12 @@
+import PageContainer from "../components/Layout/PageContainer/PageContainer";
+
 function Dashboard() {
     return (
-        <div>
-
-        </div>
+        <PageContainer>
+            <div>
+                
+            </div>
+        </PageContainer>
     )
 }
 

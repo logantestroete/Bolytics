@@ -1,3 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @theme {
-    
+    --color-primary: oklch(58% 0.19 268);
+
+    --color-success: oklch(64% 0.15 150);
+    --color-error: oklch(56% 0.17 28);
+    --color-warning: oklch(74% 0.16 82);
+    --color-info: oklch(70% 0.12 230);
+
+    /* Dark Mode */
+    --color-dark-bg-100: oklch(35% 0 0);
+    --color-dark-bg-200: oklch(30% 0 0);
+    --color-dark-bg-300: oklch(25% 0 0);
+    --color-dark-bg-400: oklch(20% 0 0);
+    --color-dark-bg-500: oklch(10% 0 0);
+
+    --color-dark-txt: oklch(90% 0 0);
+    --color-dark-txt-muted: oklch(80% 0 0);
+
+    --color-border: oklch(46.4% 0.00005 271.152);
+
+    /* Light Mode */
+    --color-background-100: oklch(90% 0 0);
+    --color-background-200: oklch(80% 0 0);
+    --color-background-300: oklch(75% 0 0);
+    --color-background-400: oklch(70% 0 0);
+    --color-background-500: oklch(65% 0 0);
+
+    --color-txt: oklch(0 0 0);
+    --color-txt-muted: oklch(30% 0 0);
 }
