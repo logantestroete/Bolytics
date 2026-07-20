@@ -8,7 +8,7 @@ type Props = {
 function PageContainer({children}: Props) {
 
     return (
-        <div className={`dark w-[100vw] h-[100vh] bg-bg-500 dark:bg-dark-bg-500 text-txt dark:text-dark-txt`}>
+        <div className={`dark w-[100vw] h-[100vh] bg-bg-500 dark:bg-dark-bg-500 text-txt dark:text-dark-txt overflow-x-hidden`}>
             <Header />
             {children}
         </div>
