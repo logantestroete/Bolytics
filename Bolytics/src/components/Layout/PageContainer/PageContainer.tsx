@@ -1,16 +1,21 @@
+import { useContext } from "react";
 import "../../../styles/index.css";
 import Header from "./Header";
+import { ThemeContext } from "../../../hooks/context/ThemeContext";
 
 type Props = {
     children: React.ReactNode;
 }
 
 function PageContainer({children}: Props) {
+    const t = useContext(ThemeContext);
 
     return (
-        <div className={`dark w-[100vw] h-[100vh] bg-bg-500 dark:bg-dark-bg-500 text-txt dark:text-dark-txt overflow-x-hidden`}>
+        <div className={`${t.theme} w-[100vw] h-[100vh] bg-background text-text dark:bg-dark-background dark:text-dark-text overflow-x-hidden`}>
             <Header />
-            {children}
+            <div className="text-text dark:text-dark-text">
+                {children}
+            </div>
         </div>
     )
 }

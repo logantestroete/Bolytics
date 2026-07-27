@@ -1,13 +1,15 @@
 import PageContainer from "../components/Layout/PageContainer/PageContainer";
+import "../styles/index.css"
 
-function Dashboard() {
+function BolyticsPlus() {
+
     return (
         <PageContainer>
-            <div>
-                This is the Dashboard
+            <div className="">
+                Welcome to Bolytics Plus
             </div>
         </PageContainer>
     )
 }
 
-export default Dashboard;
+export default BolyticsPlus;
