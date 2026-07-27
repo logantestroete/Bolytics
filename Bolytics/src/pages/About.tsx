@@ -1,11 +1,14 @@
-
+import PageContainer from '../components/Layout/PageContainer/PageContainer';
+import '../styles/index.css'
 
 
 function About() {
     return (
-        <div>
-
-        </div>
+        <PageContainer>
+            <div>
+                This is the about page
+            </div>
+        </PageContainer>
     );
 }
 
