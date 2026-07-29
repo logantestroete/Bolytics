@@ -13,7 +13,7 @@ function PageContainer({children}: Props) {
     return (
         <div className={`${t.theme} w-[100vw] h-[100vh] bg-background text-text dark:bg-dark-background dark:text-dark-text overflow-x-hidden`}>
             <Header />
-            <div className="text-text dark:text-dark-text">
+            <div className="text-text dark:text-dark-text h-[100%]">
                 {children}
             </div>
         </div>
