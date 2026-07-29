@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router'
 
-import Dashboard from './pages/Dashboard'
+import Dashboard from './pages/Dashboard/Dashboard'
 import About from './pages/About'
 import BolyticsPlus from './pages/BolyticsPlus';
 import { ThemeContextProvider } from './hooks/context/ThemeContext';

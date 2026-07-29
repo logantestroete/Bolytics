@@ -9,3 +9,11 @@ export const GameStatus = {
     SUSPENDED: 'Suspended',
     CANCELLED: 'Cancelled'
 };
+
+export const DashboardTabState = {
+    HOME: "Home",
+    PLAYERS: "Players",
+    TEAMS: "Team",
+    SEASON: "Season",
+    SCORES: "Scores"
+}
