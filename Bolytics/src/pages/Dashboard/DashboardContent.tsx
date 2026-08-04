@@ -14,7 +14,7 @@ function DashboardContent() {
     const SubPage: React.ReactNode = getSubPage(nav?.curTab);
 
     return (
-        <div className="p-4">
+        <div className="p-4 w-full h-full">
             {SubPage}
         </div>
     )

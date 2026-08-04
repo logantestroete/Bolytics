@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @theme {
+   /* Breakpoints */
+   --breakpoint-favTeam: 813px;
+
     /* ========================================
        Core surfaces
        ======================================== */

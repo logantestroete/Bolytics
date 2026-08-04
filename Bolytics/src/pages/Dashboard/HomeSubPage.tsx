@@ -1,10 +1,11 @@
 import "../../styles/index.css"
+import FavoriteTeamCard from '../../components/Cards/FavoriteTeamCard/FavoriteTeamCard'
 
 
 function HomeSubPage() {
     return (
-        <div>
-            This is the home sub page
+        <div className="h-full w-full">
+            <FavoriteTeamCard />
         </div>
     )
 }
